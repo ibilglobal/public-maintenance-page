@@ -11,7 +11,7 @@ RUN rm -f ./*
 COPY index.html .
 
 # Expose port 80 inside the container (Nginx default)
-EXPOSE 80
+EXPOSE 8501
 
 # Start Nginx
 CMD ["nginx", "-g", "daemon off;"]
