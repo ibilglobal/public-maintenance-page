@@ -10,8 +10,8 @@ RUN rm -f ./*
 # Copy the maintenance page to Nginx's HTML directory
 COPY index.html .
 
-# Expose port 80
-EXPOSE 8501
+# Expose port 80 inside the container (Nginx default)
+EXPOSE 80
 
 # Start Nginx
 CMD ["nginx", "-g", "daemon off;"]
