@@ -8,7 +8,7 @@ WORKDIR /usr/share/nginx/html
 RUN rm -f ./*
 
 # Copy the maintenance page to Nginx's HTML directory
-COPY maintenance.html .
+COPY index.html .
 
 # Expose port 80
 EXPOSE 80
