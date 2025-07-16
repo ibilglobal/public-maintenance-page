@@ -11,7 +11,7 @@ RUN rm -f ./*
 COPY index.html .
 
 # Expose port 80
-EXPOSE 80
+EXPOSE 8501
 
 # Start Nginx
 CMD ["nginx", "-g", "daemon off;"]
